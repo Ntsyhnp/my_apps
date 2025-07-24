@@ -1,0 +1,27 @@
+<div class="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8">
+  <h1 class="text-3xl font-bold text-gray-800 mb-6">Selamat Datang ke Sistem eDashboard</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl">
+    <!-- Seksyen User Biasa -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
+      <h2 class="text-xl font-semibold text-blue-600 mb-4">Pengguna Biasa</h2>
+      <a href={~p"/users/log_in"} class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded mb-2 w-full text-center">
+        Log Masuk
+      </a>
+      <a href={~p"/users/register"} class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded w-full text-center">
+        Daftar Akaun
+      </a>
+    </div>
+
+    <!-- Seksyen Admin -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center">
+      <h2 class="text-xl font-semibold text-red-600 mb-4">Admin</h2>
+      <a href={~p"/admins/log_in"} class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded mb-2 w-full text-center">
+        Log Masuk
+      </a>
+      <a href={~p"/admins/register"} class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded w-full text-center">
+        Daftar Admin
+      </a>
+    </div>
+  </div>
+</div>
